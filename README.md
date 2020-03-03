@@ -2,6 +2,7 @@
 
 Quick instructions on how to install docker on Windows 10 Enterprise edition.
 
+
 1. Download Docker Desktop from the [Docker page](https://docs.docker.com/docker-for-windows/install/).
 1. Restart the computer and enter BIOS
 1. Make sure virtualization is enabled, save BIOS and restart.
@@ -14,3 +15,6 @@ Quick instructions on how to install docker on Windows 10 Enterprise edition.
    ```  
 
 
+See also:
+* [Docker - Get Started](https://docs.docker.com/get-started/)
+* [Intro to Docker](https://docker-curriculum.com/)
