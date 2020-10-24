@@ -49,7 +49,7 @@ See also:
    * -p for mapping the ports
    * -v for mounting a local folder with the mounted folder
    ```
-   docker run --name jnds -p <CHOOSE PORT>:8888 -v <LOCAL PATH e.g. C:\project\>:/home/jovyan/ jupyter/scipy-notebook:latest
+   docker run --name <NAME> -p <CHOOSE PORT>:8888 -v <LOCAL PATH e.g. C:\project\>:/home/jovyan/ jupyter/scipy-notebook:latest
    ```
 1. If done, stop the image by getting the id of the container first.
    ```
