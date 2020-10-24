@@ -36,3 +36,33 @@ See also:
    ```
    docker run -p <PORT USED IN URL>:8888 -v C:\<DIR OF CHOICE>:/home/notebooks jupyterlab:1.0
    ```
+
+   
+# Jupyter notebook (for Data Science) via Docker
+
+1. Pull the right image from [Jupyter - Docker Images](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html). In this case, the scipy-notebook from [Docker](https://hub.docker.com/r/jupyter/scipy-notebook)
+   ```
+   docker pull jupyter/scipy-notebook
+   ```
+1. Run the image with some options:
+   * --name for a recognizable name (when stopped and started)
+   * -p for mapping the ports
+   * -v for mounting a local folder with the mounted folder
+   ```
+   docker run --name jnds -p <CHOOSE PORT>:8888 -v <LOCAL PATH e.g. C:\project\>:/home/jovyan/ jupyter/scipy-notebook:latest
+   ```
+1. If done, stop the image by getting the id of the container first.
+   ```
+   docker ps
+   docker stop <CONTAINER ID>
+   ```
+1. Restart with
+   ```
+   docker container ls -a
+   docker start <CONTAINER ID>
+   ```
+1. Remove, if neccesary, with
+   ```
+   docker container ls -a
+   docker rm <CONTAINER ID>
+   ```
